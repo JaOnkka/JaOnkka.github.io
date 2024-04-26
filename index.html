@@ -4,33 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a showcase of my projects</p>
+        <a href="projects/graphics/final.html">3D Graphics Engine</a>
+        <p>A realtime 3d graphics engine.</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Introduction</p>
-    </section>
+        <a href="projects/machinelearning/exam2.html">Supervised ML - Gladiators</a>
+        <p>Supervised machine learning for predicting gladiators' chances of survival.</p>
+        <!--
+        <p>This is a showcase of my projects.</p>
+        <h2>Project 1</h2>
+        <img src="tex/jeopardyboard.png" alt="Project 1">
+        <p>Description of Project 1.</p>
+        -->
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="projects/graphics/final.html">Project 1</a></li>
-        </ul>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 Jake Onkka</p>
-    </footer>
+
+        <footer>
+            <p>&copy; 2024 Jake Onkka</p>
+        </footer>
+    </div>
 </body>
 </html>
