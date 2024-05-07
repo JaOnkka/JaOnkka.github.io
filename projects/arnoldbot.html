@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../assets/images/selfie" />
+     <title>Jake Onkka Portfolio</title>
+     <meta name="description" content="A portfolio to showcase some of my work.">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="button" href="../index.html">
+        <span class="button-text">Portfolio</span>
+        <a class="button" href="mailto:jake.onkka@wsu.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <div id="main-content">
+
+      <div id="project-header">
+
+        <div class="main-title">Discord Bot - Jeopardy!</div>
+        <div class="body-text">Software Engineering project developing a Discord Bot</div>
+        <image class="project-header-image" src="../assets/images/arnoldbot.png" style="max-width:50%;margin:0%25%">
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">For my Software Engineering class I worked in a team of 6 students to build a multi-feature Discord bot.
+            We each focused on making our own features of the bot and worked together using Kanban and Agile strategies along with
+            feature branching for our Git workflow. 
+          </div>
+          <div class="body-text">My feature of the bot was for letting users play a game of Jeopardy within their text channels.
+            Users have the choice between starting a solo game or a multiplayer game to compete with their friends. For solo games,
+            the user can choose how many categories they want to play with which would let them choose the "length" of the game.
+            In solo play, the user is also given hints if they get the answer wrong, each failed attempt would reveal more letters of
+            the correct answer similar to Wheel of Fortune. 
+          </div>
+          <div class="body-text">In multiplayer games the host would run the command to start a lobby, where other players can 
+            click to join the lobby, once the timer ends the game is formed with all the players that entered the lobby. The gameplay
+            here is much more similar to the TV show where the first player to buzz in goes. The scores at the end of the game are tracked
+            for the user account inside a database so users can keep track of their total winnings.
+          </div>
+          <div class="body-text">When each game is queued up, the bot will create an id for the game and add players to it
+            and make a database for the questions which get pulled from a massive collection of Jeopardy questions from over 30 years.
+            So each game randomly picks however many categories, then picks the 5 questions for each of those categories.
+          </div>
+        </div>
+      </div>
+
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+          <div class="gallery-image-container">
+            <img src="../assets/images/jeopardyboard.png" class="gallery-image">
+            <span class="image-caption">Screenshot of the gameboard. Two players are in the lobby and player 1 is choosing their question.
+            </span>
+          </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/jeopardyboardmidgame.png" class="gallery-image">
+              <span class="image-caption">Game is halfway over, after each round the gameboard is updated to reflect questions being removed.
+              </span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:jake.onkka@wsu.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

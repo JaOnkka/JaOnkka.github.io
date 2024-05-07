@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../assets/images/selfie" />
+     <title>Jake Onkka Portfolio</title>
+     <meta name="description" content="A portfolio to showcase some of my work.">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="button" href="../index.html">
+        <span class="button-text">Portfolio</span>
+        <a class="button" href="mailto:jake.onkka@wsu.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <div id="main-content">
+
+      <div id="project-header">
+
+        <div class="main-title">Technical Communication Search Repository</div>
+        <div class="body-text">Senior Capstone project to build a search app for English students to search through technical communication articles.</div>
+        <image class="project-header-image" src="../assets/images/tcsrfrontpage.png">
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">This is a Capstone project for building a search app for English students at various universities to search
+            for Technical Communication articles for their research. The project's sponsor, Avon Murphy, is a prolific Technical Communication
+            researcher himself and collaborated with WSUV to have two CS Capstone teams build this app.
+          </div>
+          <div class="body-text">The first year's team had built the framework of the app and laid the foundation of the tech stack
+            needed for the front end and back end. My team then took on this project and first had to read through and understand
+            how the project worked based off of the code and documentation left behind. Aferwards we had begun development and finished
+            the app working closely with our sponsor Avon to make sure the app worked and suited the needs of our target audience.
+          </div>
+          <div class="body-text">My team and I managed to deploy the app onto WSUV servers working with the IT admin on campus which allowed
+            all students/faculty to use the app while on the network. Individually, I was responsible for the backend handling of the database
+            and functionality of searching for articles. The project's database comes from hand picked articles from our sponsor and we build
+            these entries into a database for indexing and searching using Apache Lucene and Hibernate.
+          </div>
+        </div>
+      </div>
+
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+          <div class="gallery-image-container">
+            <img src="../assets/images/tcsrtechstack.png" class="gallery-image">
+            <span class="image-caption">Tech stack of the project.
+            </span>
+          </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/tcsradvancesearch.png" class="gallery-image">
+              <span class="image-caption">The advanced search, users can add up to 8 query lines and apply boolean
+                logic operators between them.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/tcsrresults.png" class="gallery-image">
+              <span class="image-caption">Screenshot of some results, the results display the Author(s), DOI link, title, and subject(s).
+                You can also click to copy all of the search results into one of the following citation formats: MLA, Chicago, IEEE, APA.
+                Or you can view all of the citations and subjects for individual articles.
+              </span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:jake.onkka@wsu.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

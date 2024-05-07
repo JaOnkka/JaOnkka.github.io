@@ -1,73 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        /* CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 5px;
-        }
-        p {
-            text-align: justify;
-            line-height: 1.5;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Jake Onkka</h1>
-        <p>This is a showcase of my projects</p>
-        <a href="projects/capstone/capstone.html">Capstone - TCSR </a>
-        <p>Technical Communication Search Repository.</p>
+	<head>
+		<meta charset="utf-8">
 
-        <a href="projects/graphics/final.html">3D Graphics Engine</a>
-        <p>This is a realtime 3D Graphics Engine built using WebGL built entirely from scratch. This is my final project that demonstrates:
-            textures, meshes, animation, perspective, culling, camera controls, lighting, scenegraph hierarchy, heightmaps, and the 
-            diamond-square algorithm for random terrain generation. The camera controls are WASD for movement, QE for rolling, arrow keys for turning and yaw, C to move down, spacebar to move up.
-        </p>
+	<title>Jake Onkka Portfolio</title>
+    <meta name="description" content="A portfolio to showcase some of my work.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <a href="projects/machinelearning/exam2.html">Supervised ML - Gladiators</a>
-        <p>Supervised machine learning for predicting gladiators' chances of survival.</p>
+	<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
 
-        <a href="images/jeopardyboard.png">Jeopardy - Discord Bot</a>
-        <p>Discord bot that allows users to play Jeopardy games within their servers. Users can play either individually to practice or compete against their friends.</p>
-        <!--
-        <p>This is a showcase of my projects.</p>
-        <h2>Project 1</h2>
-        <img src="tex/jeopardyboard.png" alt="Project 1">
-        <p>Description of Project 1.</p>
-        -->
-
-
-
-        <footer>
-            <p>&copy; 2024 Jake Onkka</p>
-        </footer>
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+        <a class="button" href="./index.html">
+            <span class="button-text">Portfolio</span>
+        <a class="button" href="mailto:jake.onkka@wsu.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
     </div>
-</body>
+
+    <div id="main-content">
+
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+
+          <img src="./assets/images/gradselfie.jpg" class="portfolio-header-image" style="max-width: 50%;margin-left:25%";>
+        </div>
+
+        <div id="portfolio-header-text-container"style="margin-right:10%">
+            <div class="header-text">
+              <span class="main-title">Hello! I'm Jake Onkka.</span>
+              <div class="body-text">I'm a fresh Computer Science graduate from Washington State University Vancouver.</div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
+
+
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">I am originally from Southern California and moved up to the PNW in 2020 during the pandemic.
+            I started attending Clark College right away and graduated in 2022. Then I transferred to WSUV where I just graduated
+            with my Bachelor's of Science in Computer Science in May of 2024.
+          </div>
+        </div>
+      </div>
+
+      <div id="my-work-section">
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+
+          <div class="project-card">
+            <img src="./assets/images/tcsrfrontpage.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">TCSR Capstone Project</div>
+              <div class="body-text project-card-text">Search app built for Technical Communication Research.
+              </div>
+            </div>
+            <a class="button" href="./projects/capstone.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/dataset-cover.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Machine Learning - Gladiators</div>
+              <div class="body-text project-card-text">Supervised Machine Learning project to predict if gladiators surivived their 
+                career.
+              </div>
+            </div>
+            <a class="button" href="./projects/exam2.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/graphics.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Realtime 3D Graphics Engine</div>
+              <div class="body-text project-card-text">This is a realtime 3D Graphics Engine built using WebGL built entirely
+                 from scratch.
+              </div>
+            </div>
+            <a class="button" href="./projects/graphics/final.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+              <img src="./assets/images/arnoldbot.png" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Discord Bot</div>
+                <div class="body-text project-card-text">
+                    Software engineering project making a multi feature Discord Bot.
+                </div>
+              </div>
+              <a class="button" href="./projects/arnoldbot.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+            <div class="project-card">
+              <img src="./assets/images/tdstart.png" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Game Design - Tower Defense</div>
+                <div class="body-text project-card-text">2D Tower Defense game.
+                </div>
+              </div>
+              <a class="button" href="./projects/towerdefense.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+            <div class="project-card">
+              <img src="./assets/images/glorbobasement.png" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">Glorbo's Basement</div>
+                <div class="body-text project-card-text">Multiplayer Dungeon Crawler game with an Isometric view.
+                </div>
+              </div>
+              <a class="button" href="./projects/glorbo.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+              
+            </div>
+          </div>
+
+
+
+      </div>
+    </div>
+
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:jake.onkka@wsu.edu">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
 </html>

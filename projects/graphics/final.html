@@ -1,25 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Onkka Portfolio</title>
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/typography.css">
+    <link rel="stylesheet" href="../../css/utilities.css">
+    <script defer src="../../js/script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a class="button" href="../../index.html">
+            <span class="button-text">Portfolio</span>
+        </a>
+        <a class="button" href="mailto:jake.onkka@wsu.edu">
+            <span class="button-text">Contact Me</span>
+        </a>
+    </div>
+    <div class="container">
+        <canvas id="the-canvas" width="700" height="450"></canvas>
+        <div class="description">
+            <div class="body-text"style="font-size:22px">
+                <h3 style="font-size:24px">Project Overview:</h3>
+                <p>
+                    This is a realtime 3D Graphics Engine built using WebGL built entirely from scratch. This is my final project that demonstrates:
+                </p>
+                <ul>
+                    <li>Textures</li>
+                    <li>Meshes</li>
+                    <li>Animation</li>
+                    <li>Perspective</li>
+                    <li>Camera controls</li>
+                    <li>Lighting</li>
+                    <li>Scenegraph hierarchy</li>
+                    <li>Heightmaps</li>
+                    <li>Diamond-square algorithm for random terrain generation</li>
+                </ul>
+            </div>
+        
+            <div class="controls"style="font-size:22px">
+                <h2 style="font-size:24px">Controls:</h2>
+                <p>
+                    <ul>
+                        <li>WASD for movement</li>
+                        <li>QE for rolling</li>
+                        <li>Arrow keys for turning and yaw, and up/down</li>
+                        <li>C to move down</li>
+                        <li>Spacebar to move up</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
 <html>
     <head>
         <style>
             body { 
             }
             canvas {
-                width: 1500;
-                height: 700;
+                width: 700;
+                height: 450;
             }
             #render-button {
                 width: 180px;
                 height: 50px;
                 font-size: 24pt;
             }
-            #the-canvas { border: 1px solid darkblue; }
+            #the-canvas { border: 1px solid darkblue; margin: 78px 16px}
             #user-matrix input { width: 64px; font-size: 24px; }
         </style>
     </head>
 
     <body>
-        <canvas id = "the-canvas" width = "1500" height = "700"></canvas>
         <script src = "lib.js"></script>
         <script src = "vector.js"></script>
         <script src = "matrix.js"></script>

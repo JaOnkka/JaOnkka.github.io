@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../assets/images/selfie" />
+     <title>Jake Onkka Portfolio</title>
+     <meta name="description" content="A portfolio to showcase some of my work.">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="button" href="../index.html">
+        <span class="button-text">Portfolio</span>
+        <a class="button" href="mailto:jake.onkka@wsu.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <div id="main-content">
+
+      <div id="project-header">
+
+        <div class="main-title">Game Design - Glorbo's Basement</div>
+        <div class="body-text">Multiplayer Dungeon Crawler game with an Isometric view.</div>
+        <image class="project-header-image" src="../assets/images/glorbobasement.png">
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">Game Design project where I worked in a team of 4 to make a networked multiplayer
+            dungeon crawler game dubbed Glorbo's Basement. The game is fantasy theme and features basic combat and a class system
+            as well as items and powerups that players can pick up as they progress through several floors.
+          </div>
+          <div class="body-text">I worked on the tilemap and created the conversion of cartesian coordinates to our own isometric coordinate
+            system so all of the tiles, players, enemies, and projectiles are rendered in the correct order and position. Because of this I
+            handled all of the map collisions and pathfinding for the enemies with A Star algorithm.
+          </div>
+        </div>
+      </div>
+
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+          <div class="gallery-image-container">
+            <img src="../assets/images/glorbospawn.png" class="gallery-image">
+            <span class="image-caption">Screenshot of what the game looks like.
+            </span>
+          </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/glorboenemies.png" class="gallery-image">
+              <span class="image-caption">Screenshot of an enemy slime approaching the player.
+              </span>
+            </div>
+            <div class="gallery-image-container">
+                <img src="../assets/images/glorbotransparent.png" class="gallery-image">
+                <span class="image-caption">Screenshot of the player up against the wall making it transparent so the player isn't hidden.
+                </span>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:jake.onkka@wsu.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

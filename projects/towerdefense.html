@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../assets/images/selfie" />
+     <title>Jake Onkka Portfolio</title>
+     <meta name="description" content="A portfolio to showcase some of my work.">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="button" href="../index.html">
+        <span class="button-text">Portfolio</span>
+        <a class="button" href="mailto:jake.onkka@wsu.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <div id="main-content">
+
+      <div id="project-header">
+
+        <div class="main-title">Game Design - Tower Defense</div>
+        <div class="body-text">2D Tower Defense Game</div>
+        <image class="project-header-image" src="../assets/images/tdstart.png" style="max-width:50%;margin:0%25%">
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">Game Design project where I made a 2D tower defense game. The player starts with
+            100 currency and can place down walls and/or cannons to defend their base from incoming waves of enemies.
+            The game starts in a build phase where the tilemap is shown and the player can add or remove walls or cannons.
+            Then when the player starts the round, the game is switched to a normal view of the battlefield and enemies are spawned in
+            and approach the player's base to destroy it. 
+          </div>
+          <div class="body-text">Every frame runs Dijkstra's Algorithm and enemies index into their tile to view the optimal pathing.
+            When the player places walls, each tier of wall has a health value and a defense value. Each tile in Dijkstra's Algorithm
+            costs 1 movement, the defense value of a wall or cannon increases the movement cost meaning that enemies will pathfind to
+            go around walls or to the weakest link in the walls. If an enemy is attacking a wall, its health decreases lowering its
+            defense value so that other enemies will also target this new weakness and eventually destroy the wall or obstacle.
+          </div>
+        </div>
+      </div>
+
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+          <div class="gallery-image-container">
+            <img src="../assets/images/tdbuild1.png" class="gallery-image">
+            <span class="image-caption">Build phase, the user can build or delete walls/towers.
+            </span>
+          </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/tdround1.png" class="gallery-image">
+              <span class="image-caption">Battle phase, the user can move their character and help shoot projectiles at the approaching enemies.
+              </span>
+            </div>
+            <div class="gallery-image-container">
+                <img src="../assets/images/tddijkstra.png" class="gallery-image">
+                <span class="image-caption">Debugging text enabled, in each tile the top number is the health whatever occupies that space and the bottom number is the distance to the base according to Dijkstra's Algorithm.
+                </span>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" href="mailto:jake.onkka@wsu.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
