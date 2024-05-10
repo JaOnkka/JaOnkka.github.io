@@ -90,7 +90,9 @@ body {
   gap: 34px;
 }
 
-
+.button {
+  background-color: white;
+}
 
 
 /* Project Section */

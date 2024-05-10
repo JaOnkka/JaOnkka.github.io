@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,6 +97,13 @@
             let canvas = document.getElementById( 'the-canvas' );
             /** @type {WebGLRenderingContext} */
             let gl = canvas.getContext( 'webgl2' );
+
+
+            window.addEventListener("keydown", function(e) {
+                if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+                }
+            }, false);
 
             const GOURAUD_VERTEX_SHADER = 
             `   #version 300 es
